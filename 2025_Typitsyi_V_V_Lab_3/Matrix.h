@@ -4,23 +4,26 @@
 
 #include "SMatrix.h"
 
-SVector VectorCreate(unsigned long int);
-void VectorDisplay(SVector);
-SVector VectorAdd(SVector, SVector);
-SVector VectorDiff(SVector, SVector);
-double VectorScalar(SVector, SVector);
-SVector VectorMultConst(SVector, double);
-SVector VectorCopy(SVector);
-void VectorDelete(SVector*);
+// Векторні функції
+SVector VectorCreate(size_t size);
+void VectorDisplay(const SVector v);
+SVector VectorAdd(const SVector v1, const SVector v2);
+SVector VectorDiff(const SVector v1, const SVector v2);
+double VectorScalar(const SVector v1, const SVector v2);
+SVector VectorMultConst(const SVector v, double c);
+SVector VectorCopy(const SVector v);
+void VectorDelete(SVector *v);
 
-SMatrix MatrixCreate(unsigned long int, unsigned long int);
-void MatrixDisplay(SMatrix);
-void MatrixMakeE(SMatrix*);
-SMatrix MatrixMMMult(SMatrix, SMatrix);
-SMatrix MatrixMMAdd(SMatrix, SMatrix);
-SMatrix MatrixMVMult(SMatrix, SVector);
-SMatrix MatrixCopy(SMatrix);
-void MatrixDelete(SMatrix*);
+// Матричні функції
+SMatrix MatrixCreate(size_t row, size_t col);
+void MatrixDisplay(const SMatrix m);
+void MatrixMakeE(SMatrix *m);
+SMatrix MatrixMMMult(const SMatrix m1, const SMatrix m2);
+SMatrix MatrixMMAdd(const SMatrix m1, const SMatrix m2);
+SMatrix MatrixMVMult(const SMatrix m, const SVector v);
+SMatrix MatrixCopy(const SMatrix m);
+void MatrixDelete(SMatrix *m);
 
-#endif
+#endif // __MATRIX_H
+
 

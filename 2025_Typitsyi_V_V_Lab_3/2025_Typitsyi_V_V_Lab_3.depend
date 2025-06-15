@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1750007160 source:c:\users\Влад\desktop\Операційні системи\2025_typitsyi_v_v_lab_3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Matrix.h"
+
+1750006767 c:\users\Влад\desktop\Операційні системи\2025_typitsyi_v_v_lab_3\matrix.h
+	"SMatrix.h"
+
+1750006737 c:\users\Влад\desktop\Операційні системи\2025_typitsyi_v_v_lab_3\smatrix.h
+	<stddef.h>
+
+1750007237 source:c:\users\Влад\desktop\Операційні системи\2025_typitsyi_v_v_lab_3\matrix.c
+	<stdlib.h>
+	<stdio.h>
+	"Matrix.h"
+
